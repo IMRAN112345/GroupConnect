@@ -1,0 +1,120 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Overlay */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+/* Floating background texts */
+/* Floating background texts with animation across screen */
+.floating-background-texts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-background-texts span {
+  position: absolute;
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.08;
+  white-space: nowrap;
+  animation: floatAround 20s linear infinite;
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.08;
+  }
+  50% {
+    transform: translate(40px, -60px) rotate(180deg);
+    opacity: 0.04;
+  }
+  100% {
+    transform: translate(-30px, 70px) rotate(360deg);
+    opacity: 0.08;
+  }
+}
+
+
+/* Main card */
+.centered-form {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Heading */
+.centered-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Buttons */
+a {
+  text-decoration: none;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .centered-form {
+    margin: 60px 20px;
+    padding: 1.5rem;
+  }
+
+  .centered-form h2 {
+    font-size: 1.7rem;
+  }
+  .floating-background-texts span {
+  font-size: 0.8rem;
+}
+
+}

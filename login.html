@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Group Connect</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div id="customAlert" class="custom-alert">
+        <p id="alertMessage">Default alert message</p>
+        <button id="validation" onclick="hideCustomAlert()">OK</button>
+    </div>
+
+    <div class="floating-background-texts" aria-hidden="true">
+        <span>Group Connect</span><span>Secure Chat</span><span>Real-Time</span><span>Privacy</span><span>Fast</span>
+        <span>Simple</span><span>Connect</span><span>Groups</span><span>Private</span><span>Friends</span>
+    </div>
+
+    <div class="centered-form">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="userLogin" placeholder="Username / Email" required />
+            <div class="password-wrapper">
+                <input type="password" id="passwordLogin" placeholder="Password" required />
+                <i class="fa-solid fa-eye toggle-password" data-target="passwordLogin"></i>
+            </div>
+            <p class="form-switch-forget"><a href="recovery-info.html">Forget Password?</a></p>
+            <button type="submit">Login</button>
+
+            <p class="form-switch">Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="togglePassword.js"></script>
+</body>
+
+</html>

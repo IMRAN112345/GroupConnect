@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  z-index: 9999;
+  display: none; 
+  width: 90%;
+  max-width: 300px;
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.custom-alert.show {
+  display: block;
+}
+
+.custom-alert p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.custom-alert button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.custom-alert button:hover {
+  background-color: #3e9141;
+}
+
+.background-text {
+  position: fixed;
+  z-index: 0;
+  font-size: 150px;
+  color: rgba(255, 255, 255, 0.30);
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.centered-form {
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #aaa;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #007BFF;
+}
+
+/* Password toggle styling */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+
+.toggle-password:hover {
+  color: #007BFF;
+}
+
+.members-section {
+  margin-bottom: 20px;
+}
+
+.member-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.scrollable-members {
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.memberWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.memberInput {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 17px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.memberWrapper button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  background: #000000;
+  border: none;
+  color: rgb(239, 235, 235);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addMemberBtn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .background-text{
+    display: none;
+  }
+}
+
+
+
+
+

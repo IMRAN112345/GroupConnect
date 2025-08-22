@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Group | GroupConnect</title>
+    <link rel="stylesheet" href="join-group.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--alert box -->
+    <div id="customAlert" class="custom-alert">
+        <p id="alertMessage">Default alert message</p>
+        <button id="validation" onclick="hideCustomAlert()">OK</button>
+    </div>
+
+    <!-- Floating background texts -->
+    <div class="floating-background-texts">
+        <span>Group</span>
+        <span>Connect</span>
+        <span>Chat</span>
+        <span>Join</span>
+        <span>Secure</span>
+        <span>Members</span>
+        <span>Realtime</span>
+    </div>
+
+    <!-- Centered Form -->
+    <div class="centered-form">
+        <h2>Join Group</h2>
+        <form id="joinGroupForm">
+            <input type="text" id="groupName" placeholder="Group Name" required />
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Password" required />
+                <i class="fa-solid fa-eye toggle-password" data-target="password"></i>
+            </div>
+            <button type="submit">Join</button>
+        </form>
+    </div>
+    <script type="module" src="join-group.js"></script>
+    <script type="module" src="togglePassword.js"></script>
+</body>
+
+</html>

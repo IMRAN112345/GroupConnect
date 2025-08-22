@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reset Account</title>
+  <link rel="stylesheet" href="reset-account.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6a6d3e0c58.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- Add inside your reset page body -->
+<div class="floating-background-texts">
+  <span style="top:10%; left:5%;">Reset Page</span>
+  <span style="top:20%; left:80%;">Forgot Password</span>
+  <span style="top:70%; left:20%;">Stay Secure</span>
+  <span style="top:50%; left:60%;">Update Access</span>
+  <span style="top:30%; left:40%;">Login Again</span>
+  <span style="top:15%; left:70%;">Create New</span>
+  <span style="top:80%; left:10%;">Safe Account</span>
+  <span style="top:65%; left:85%;">Security First</span>
+  <span style="top:45%; left:25%;">Strong Password</span>
+  <span style="top:85%; left:55%;">Welcome Back</span>
+</div>
+
+  <div class="container">
+    <div id="customAlert" class="custom-alert">
+      <p id="alertMessage">Default alert message</p>
+      <button id="validation" onclick="hideCustomAlert()">OK</button>
+    </div>
+    <h2>Reset Your Account</h2>
+    <form id="resetForm" autocomplete="off">
+
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="username" placeholder=" " required>
+        <label for="username">Username</label>
+        <span class="highlight"></span>
+      </div>
+
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Email</label>
+        <span class="highlight"></span>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Reset Email</button>
+    </form>
+  </div>
+
+  <script type="module" src="reset-account.js"></script>
+</body>
+
+</html>
