@@ -1,2 +1,2 @@
 # GroupConnect
-A chat web application
+A web chat application
