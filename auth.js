@@ -121,8 +121,8 @@ if (registerForm) {
 
             // ----- Generate Firebase verification link -----
             const actionCodeSettings = {
-                url: 'https://fir-95682.firebaseapp.com/login.html', // redirect after verification
-                handleCodeInApp: true
+                url: 'https://group-connect.vercel.app/login.html', // redirect after verification
+                handleCodeInApp: false
             };
             await sendEmailVerification(user, actionCodeSettings);
 
@@ -238,6 +238,7 @@ if (loginForm) {
 }
 
 export { showCustomAlert, showSuccessMsg };
+
 
 
 
