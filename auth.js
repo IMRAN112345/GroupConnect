@@ -21,7 +21,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 // Initialize EmailJS
-emailjs.init('N6hJw0nZntlgC14WK'); // Your public key
+emailjs.init('S5s25maWcTTj4-YjV'); // Your public key
 
 // ----- Custom alert functions -----
 let alertTimeout = null;
@@ -238,6 +238,7 @@ if (loginForm) {
 }
 
 export { showCustomAlert, showSuccessMsg };
+
 
 
 
